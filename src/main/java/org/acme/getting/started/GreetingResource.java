@@ -18,12 +18,14 @@ public class GreetingResource {
     @Produces(MediaType.TEXT_PLAIN)
     @Path("/greeting/{name}")
     public String greeting(@PathParam String name) {
+        System.out.println("Let's greet " + name);
         return service.greeting(name);
     }
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "hello";
+        System.out.println("A long time ago in a galaxy far, far away....");
+        return "Hello there!";
     }
 }
