@@ -25,7 +25,7 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        System.out.println("A long time ago in a galaxy far, far away....");
-        return "Hello there!";
+        System.out.println("Showing a standard greeting message...");
+        return "Hello World!";
     }
 }
